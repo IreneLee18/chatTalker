@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="chatTalker AI 機器人">
+  <meta name="author" content="Irene">
+  <meta property="og:title" content="chatTalker AI 機器人" />
+  <meta property="og:description" content="chatTalker AI 機器人" />
+  <title>chatTalker 方案費用</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="scss/all.css">
+</head>
+
+<body>
+  <div id="app" class="position-relative overflow-hidden">
+    <div class="banner-background d-none d-md-inline"></div>
+    <img src="/imag/banner.svg" class="banner2-bg position-absolute end-0 zindex-1 d-none d-md-inline" height="470">
+    <div class="banner-background banner-background-sm top-3 d-md-none"></div>
+    <img src="/imag/banner_sm.svg" class="banner2-sm position-absolute top-3 zindex-1 d-md-none" height="495">
+    <!-- ball -->
+    <button class="ball-top btn-primary text-white rounded-circle text-center fw-bold"
+      style="width: 50px; height: 50px;" @click.preventDefault="toTop">Top</button>
+      <div class="position-absolute ball-4 zindex-1" style="background-image: url('imag/ball03.svg');"></div>
+    <header>
+      <!-- navbar -->
+      <div class="container">
+        <nav class="navbar">
+          <div class="container d-flex my-1 mt-md-3 mb-md-0">
+            <a class="navbar-brand" href="#">
+              <img class="d-none d-md-inline" src="/imag/logo.png" alt="logo" width="218.06" height="40">
+              <img class="d-md-none" src="/imag/logo.png" alt="logo" width="130.84" height="24">
+            </a>
+            <a href="#select-pay" class="btn btn-info text-white">方案費用</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="d-block d-md-none border-top border-2 border-secondary"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center mt-7">
+            <h1 class="fw-bold fs-1 mb-2">計費方式說明</h1>
+            <p>聊天機器人幫你實現增粉、轉單、客服等目標</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main2 mt-md-11 pt-8">
+      <div class="container mt-4 mt-md-10">
+        <div class="row d-flex flex-column">
+          <!-- 彈性選擇 -->
+          <div class="col text-center mb-4 mb-md-6 ">
+            <h2 class="fs-1 fw-bold">彈性選擇，提供您選擇最適合的方案</h2>
+            <ul id="select-pay" class="d-flex justify-content-center list-unstyled mt-6 overflow-scroll">
+              <li class="num" v-for="item in numbers" :key="item">
+                <input type="button" :value=`${item.num}位` class="btn btn-outline-primary py-md-2 me-2"
+                  @click="selectNum(item)" :class="{'people-active':item.num===temp.num}">
+              </li>
+            </ul>
+            <!-- 基本＆標準 -->
+            <div class="row justify-content-center mt-6">
+              <div class="col-12 col-md-5 mb-3">
+                <div class="card border-white rounded-3 shadow">
+                  <h3 class="card-title fw-bold border-bottom border-1 border-dddddd py-2">基本版</h3>
+                  <p class="card-text mt-3">提供中小企業最必要的功能<br>完整建立分眾以達到精準的行銷自動化</p>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-center">
+                      <div class="box">
+                        <h4 class="fs-8 pt-3">訂閱用戶數</h4>
+                        <p class="font-family-number text-primary fs-2">{{temp.num ? temp.num:10000}}<span
+                            class="font-monospace text-primary fs-8 fw-bold ms-1">位</span></p>
+                      </div>
+                      <div class="align-self-center"><span class="fs-2 px-3">=</span></div>
+                      <div class="box">
+                        <h4 class="fs-8 pt-3">試算每月的費用</h4>
+                        <p class="font-family-number fs-2">{{temp.basicPrice ? temp.basicPrice:600}}<span
+                            class="font-monospace fs-8 fw-bold ms-1">TWD</span>
+                        </p>
+                      </div>
+                    </div>
+                    <ul class="d-flex flex-column align-items-start mt-5 list-unstyled">
+                      <li class="p-1">
+                        <img src="/imag/icon_check.svg" alt="check">
+                        <span class="ms-2">支援 Messenger / Instagram 或 LINE 渠道</span>
+                      </li>
+                      <li class="p-1">
+                        <img src="/imag/icon_check.svg" alt="check">
+                        <span class="ms-2">10 個進階套件</span>
+                      </li>
+                      <li class="p-1">
+                        <img src="/imag/icon_check.svg" alt="check">
+                        <span class="ms-2">可設定 50 種分眾標籤</span>
+                      </li>
+                      <li class="p-1">
+                        <img src="/imag/icon_check.svg" alt="check">
+                        <span class="ms-2">客服人機轉接</span>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary text-white lh-lg mb-2">立即體驗</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-5">
+                <div class="card border-white rounded-3 shadow">
+                  <h3 class="card-title fw-bold border-bottom border-1 border-dddddd py-2">標準版</h3>
+                  <p class="card-text mt-3">建立企業流量池，全通路數據整合與交換<br>高可靠性服務</p>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-center">
+                      <div class="box">
+                        <h4 class="fs-8 pt-3">訂閱用戶數</h4>
+                        <p class="font-family-number text-primary fs-2">{{temp.num ? temp.num:10000}}<span
+                            class="font-monospace text-primary fs-8 fw-bold ms-1">位</span></p>
+                      </div>
+                      <div class="align-self-center"><span class="fs-2 px-3">=</span></div>
+                      <div class="box">
+                        <h4 class="fs-8 pt-3">試算每月的費用</h4>
+                        <p class="font-family-number fs-2">{{temp.standardPrice ? temp.standardPrice:1600}}<span
+                            class="font-monospace fs-8 fw-bold ms-1">TWD</span>
+                        </p>
+                      </div>
+                    </div>
+                    <ul class="d-flex flex-column align-items-start mt-5 list-unstyled">
+                      <li class="p-1">
+                        <img src="/imag/icon_check.svg" alt="check">
+                        <span class="ms-2">支援多個 Messenger、Instagram 和 LINE 渠道</span>
+                      </li>
+                      <li class="p-1">
+                        <img src="/imag/icon_check.svg" alt="check">
+                        <span class="ms-2">20 個進階及行銷互動套件</span>
+                      </li>
+                      <li class="p-1">
+                        <img src="/imag/icon_check.svg" alt="check">
+                        <span class="ms-2">可設定 500 種分眾標籤</span>
+                      </li>
+                      <li class="p-1">
+                        <img src="/imag/icon_check.svg" alt="check">
+                        <span class="ms-2">客服人機轉接＋自動指派專員處理</span>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary text-white lh-lg mb-2">立即體驗</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 常見問題 -->
+          <h2 class="fs-1 text-center fw-bold mt-4 mb-2 my-md-5">常見問題</h2>
+          <div class="row g-1 justify-content-center">
+            <div class="col-12 col-md-10">
+              <div class="accordion">
+                <div class="accordion-item border rounded-3 shadow mb-2">
+                  <h2 class="accordion-header border">
+                    <button class="accordion-button collapsed" type="button"
+                      @click.preventDefault="clickQuestion('ques1')"
+                      :class="{'text-primary':ques1,'fw-bold':ques1,'accordion-button-active':ques1}">
+                      我要怎麼變更方案？
+                    </button>
+                  </h2>
+                  <div class="accordion-collapse collapse" :class="{show:ques1}">
+                    <div class="accordion-body text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Consequatur
+                      iusto dicta placeat tenetur nulla neque consectetur sit sequi iste nesciunt, velit mollitia?
+                      Deleniti, veritatis magni possimus eos nemo doloribus eum.</div>
+                  </div>
+                </div>
+                <div class="accordion-item border rounded-3 shadow mb-2">
+                  <h2 class="accordion-header border">
+                    <button class="accordion-button collapsed" type="button"
+                      @click.preventDefault="clickQuestion('ques2')"
+                      :class="{'text-primary':ques2,'fw-bold':ques2,'accordion-button-active':ques2}">
+                      如果我沒有LINE官方帳號怎麼辦？
+                    </button>
+                  </h2>
+                  <div class="accordion-collapse collapse" :class="{show:ques2}">
+                    <div class="accordion-body text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Consequatur
+                      iusto dicta placeat tenetur nulla neque consectetur sit sequi iste nesciunt, velit mollitia?
+                      Deleniti, veritatis magni possimus eos nemo doloribus eum.</div>
+                  </div>
+                </div>
+                <div class="accordion-item border rounded-3 shadow mb-2">
+                  <h2 class="accordion-header border">
+                    <button class="accordion-button collapsed" type="button"
+                      @click.preventDefault="clickQuestion('ques3')" :class="{'text-primary':ques3,'fw-bold':ques3,
+                    'accordion-button-active':ques3}">非上班日有客服支援嗎？
+                    </button>
+                  </h2>
+                  <div class="accordion-collapse collapse" :class="{show:ques3}">
+                    <div class="accordion-body text-dark">
+                      <p>當然哦！我們錢都收了，不會拋棄你的！</p>
+                      <p>請您直接來我們公司，我們假日也都在辦公室。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+    <footer class="bg-light text-center py-2 mt-6 mt-md-11">
+      <span>© 2022 chatTalker. All Rights Reserved.</span>
+    </footer>
+  </div>
+
+
+
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.33/vue.global.min.js'
+    integrity='sha512-nswZG83l1MggaGEAe/zLIbsVpZJUyqv+yg40f2CNp9QH5AOtOsjS4PSdWRDEr/v+R6YPhNJ1gvhDEJDOqh5qxQ=='
+    crossorigin='anonymous'></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
