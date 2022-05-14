@@ -14141,9 +14141,9 @@ footer .btn {
   border-radius: 12px;
 }
 
-.accordion-button::after {
+/* .accordion-button::after {
   background-image: url("../imag/icon_plus.svg");
-}
+} */
 
 .accordion-button-active::after {
   background-image: url("../imag/icon_minus.svg");
