@@ -14142,7 +14142,7 @@ footer .btn {
 }
 
 .accordion-button-active::after {
-  background-image: url("/imag/icon_minus.svg");
+  background-image: url("imag/icon_minus.svg");
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
 }
