@@ -226,10 +226,15 @@ footer {
   background-color: #f5f5f5;
   border-radius: 12px;
 }
+.accordion-button{
+  &::after{
+    background-image: url('../imag/icon_plus.svg');
+  }
+}
 
 .accordion-button-active {
   &::after {
-    background-image: url('imag/icon_minus.svg');
+    background-image: url('../imag/icon_minus.svg');
     transform: translateY(10px);
   }
 }
