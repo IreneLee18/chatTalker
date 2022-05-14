@@ -1146,8 +1146,8 @@ $accordion-icon-active-color: $accordion-button-active-color !default;
 $accordion-icon-transition: transform .2s ease-in-out !default;
 $accordion-icon-transform: rotate(-180deg) !default;
 
-$accordion-button-icon: url("imag/icon_plus.svg") !default;
-$accordion-button-active-icon: url("imag/icon_minus.svg") !default;
+$accordion-button-icon: url("../imag/icon_plus.svg") !default;
+$accordion-button-active-icon: url("../imag/icon_minus.svg") !default;
 // scss-docs-end accordion-variables
 
 // Tooltips
