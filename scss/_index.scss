@@ -6,19 +6,22 @@
   font-family: 'Comfortaa', cursive;
 }
 
-.color-dddddd {
+.color-gray {
   background-color: #dddddd !important;
   border-color: #dddddd !important;
 }
 
-.border-dddddd {
+.border-gray {
   border-color: #dddddd !important;
 }
 
 .zindex-1 {
   z-index: -1;
 }
-
+.logo{
+  width: 130.84px;
+  height: 24px;
+}
 .ball-top {
   border: none;
   position: fixed;
@@ -27,25 +30,7 @@
   z-index: 100;
 }
 
-// .ball1-bg {
-//   bottom: -13%;
-//   right: 83%;
-// }
-
-// .ball1-sm {
-//   bottom: -29%;
-//   left: -18%;
-// }
-.ball-1 {
-  width: 150px;
-  height: 150px;
-  top: 13.5%;
-  right: 85%;
-  background-size: cover;
-}
-
 .ball-1,
-.ball-2,
 .ball-3,
 .ball-4 {
   width: 150px;
@@ -59,8 +44,11 @@
 }
 
 .ball-2 {
+  background-size: 9.38rem;
+  width: 100px;
+  height: 150px;
   top: 54%;
-  right: -12%;
+  right: 0;
 }
 
 .ball-3 {
@@ -118,16 +106,14 @@ main {
 
 footer {
   margin-top: -1rem;
-
-  .btn {
-    bottom: 21.5%;
-  }
 }
 
 @media (min-width:768px) {
-
+  .logo{
+    width: 218.06px;
+    height: 40px;
+  }
   .ball-1,
-  .ball-2,
   .ball-4 {
     width: 360px;
     height: 360px;
@@ -139,8 +125,10 @@ footer {
   }
 
   .ball-2 {
+    height: 360px;
+    width: 200px;
     top: 44%;
-    right: -7%;
+    right: 0;
   }
 
   .ball-3 {
@@ -168,9 +156,6 @@ footer {
     }
   }
 
-  footer {
-    margin-top: 0;
-  }
 }
 
 //page2
@@ -180,13 +165,11 @@ footer {
   background-color: #F7F9FD;
   width: 100%;
   height: 470px;
-  z-index: -222;
   border-radius: 0 0 0 300px;
 }
 
 .banner-background-sm {
   height: 483px;
-  z-index: -222;
   border-radius: 0 0 0 150px;
 }
 
@@ -195,9 +178,6 @@ footer {
   background-size: cover;
 }
 
-.main2 {
-  margin-top: 20rem;
-}
 
 .btn-outline-primary {
   &:hover {
@@ -220,21 +200,9 @@ footer {
   color: #fff !important;
 }
 
-.box {
-  width: 169px;
-  height: 108px;
-  background-color: #f5f5f5;
-  border-radius: 12px;
-}
-// .accordion-button{
-//   &::after{
-//     background-image: url('../imag/icon_plus.svg');
-//   }
-// }
-
 .accordion-button-active {
   &::after {
-    background-image: url('../imag/icon_minus.svg');
+    background-image: url('/imag/icon_minus.svg');
     transform: translateY(10px);
   }
 }
