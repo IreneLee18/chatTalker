@@ -14804,15 +14804,6 @@ fieldset:disabled .btn {
   font-family: 'Comfortaa', cursive;
 }
 
-.color-gray {
-  background-color: #dddddd !important;
-  border-color: #dddddd !important;
-}
-
-.border-gray {
-  border-color: #dddddd !important;
-}
-
 .zindex-1 {
   z-index: -1;
 }
