@@ -14859,6 +14859,14 @@ fieldset:disabled .btn {
   background-repeat: no-repeat;
 }
 
+.bg-home-sm {
+  width: 298px;
+  height: 220px;
+  top: 7.5%;
+  left: 0%;
+  background-size: 18.67rem;
+}
+
 main .contact {
   width: 60px;
   height: 60px;
