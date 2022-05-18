@@ -5590,7 +5590,7 @@ fieldset:disabled .btn {
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("../../imag/icon_minus.svg");
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_minus.svg");
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
@@ -5602,7 +5602,7 @@ fieldset:disabled .btn {
   height: 1.25rem;
   margin-left: auto;
   content: "";
-  background-image: url("../../imag/icon_plus.svg");
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_plus.svg");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
@@ -14861,16 +14861,21 @@ fieldset:disabled .btn {
 }
 
 .bg-home-sm {
-  width: 320px;
-  height: 235px;
+  width: 350px;
+  height: 350px;
   top: 7%;
-  left: 0%;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 21.5rem;
 }
 
 main .contact {
   width: 60px;
   height: 60px;
+}
+
+main .role {
+  width: 80%;
+  margin-bottom: 1.5rem;
 }
 
 main .ch-image {
@@ -14937,11 +14942,17 @@ footer {
     width: 90px;
     height: 90px;
   }
-  main .w-75 {
-    width: 25%;
+  main .role {
+    width: calc(50% - 1rem);
   }
   main .fs-1 {
     font-size: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  main .role {
+    width: calc(25% - 1rem);
   }
 }
 
@@ -14974,7 +14985,7 @@ footer {
 }
 
 .num:first-child {
-  margin-left: 24rem;
+  margin-left: 20rem;
 }
 
 .people-active {
@@ -14983,7 +14994,7 @@ footer {
 }
 
 .accordion-button-active::after {
-  background-image: url("/imag/icon_minus.svg");
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_minus.svg");
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
 }
