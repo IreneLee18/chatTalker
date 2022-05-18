@@ -21,9 +21,11 @@
   <div id="app" class="position-relative">
     <div class="banner-background d-none d-md-inline zindex-1"></div>
     <img src="imag/banner.svg" class="banner2-bg position-absolute end-0 zindex-1 d-none d-md-inline" height="470">
+    <div class="banner-background banner-background-sm top-3 d-md-none zindex-1"></div>
+    <img src="imag/banner_sm.svg" class="banner2-sm position-absolute top-3 zindex-1 d-md-none" height="495">
     <!-- ball -->
     <button class="ball-top btn-primary text-white rounded-circle text-center fw-bold"
-      style="width: 50px; height: 50px;" @click.preventDefault="toTop">Top</button>
+    @click.preventDefault="toTop">Top</button>
       <div class="position-absolute ball-4 zindex-1" style="background-image: url('imag/ball03.svg');"></div>
     <header>
       <!-- navbar -->
@@ -39,9 +41,6 @@
         </nav>
       </div>
     </header>
-    <!--  banner-sm  -->
-    <div class="banner-background banner-background-sm top-3 d-md-none zindex-1"></div>
-    <img src="imag/banner_sm.svg" class="banner2-sm position-absolute top-3 end-0 zindex-1 d-md-none" height="495">
     <div class="banner">
       <div class="d-block d-md-none border-top border-2 border-secondary"></div>
       <div class="container">
@@ -210,17 +209,10 @@
       </div>
     </main>
 
-
-
     <footer class="bg-light text-center py-2 mt-6 mt-md-11">
       <span>© 2022 chatTalker. All Rights Reserved.</span>
     </footer>
   </div>
-
-
-
-
-
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.33/vue.global.min.js'
     integrity='sha512-nswZG83l1MggaGEAe/zLIbsVpZJUyqv+yg40f2CNp9QH5AOtOsjS4PSdWRDEr/v+R6YPhNJ1gvhDEJDOqh5qxQ=='
